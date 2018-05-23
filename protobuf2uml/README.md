@@ -42,6 +42,8 @@ As of April 2016, on Ubuntu v14.04 the following command installed an old versio
 
 (I referred to [here](http://www.confusedcoders.com/random/how-to-install-protocol-buffer-2-5-0-on-ubuntu-13-04) and [here](https://github.com/BVLC/caffe/issues/2092#issuecomment-98917616) for protobuf installation help)
 
+> For installing on Mac you can use `brew` for all dependencies. You will need to install `graphviz`, `libprotoc`, `python`, `wget`, and the python package using `pip3 install protobuf`.
+
 **2)** Make sure you have the following files in the same directory:
 
 make_uml.sh  
