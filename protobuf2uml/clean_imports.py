@@ -19,7 +19,7 @@ def main(args):
     for line in fileinput.input(file_name, inplace=True):
         if line.startswith("import \""):
             last_index = line.rfind('/')
-            if last_index >= 0:
+            if last_index >= 0 and "google/protobuf/" not in line:
                 line = "import \"" + line[last_index+1:]
         sys.stdout.write(line)
 
